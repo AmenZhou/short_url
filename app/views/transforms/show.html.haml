@@ -6,4 +6,4 @@
   %p
     %strong Short url:
     = link_to request.host + go_transform_path(@transform), @transform.long_url
-  = link_to 'Back', transforms_path
+  = link_to 'Back', new_transform_path
