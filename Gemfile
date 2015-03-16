@@ -46,9 +46,11 @@ end
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem "haml-rails", "~> 0.9"
+ruby "2.1.2"
 group :test do
   gem 'rspec-rails'
 end
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
