@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Long url:</strong>
+  <%= @transform.long_url %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @transform.short_url %>
+</p>
+
+<%= link_to 'Edit', edit_transform_path(@transform) %> |
+<%= link_to 'Back', transforms_path %>
