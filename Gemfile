@@ -45,3 +45,4 @@ end
 
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
+gem "haml-rails", "~> 0.9"

@@ -1,0 +1,19 @@
+= form_for(@transform) do |f|
+  - if @transform.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@transform.errors.count, "error")
+        prohibited this transform from being saved:
+      %ul
+        - @transform.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :long_url
+    %br/
+    = f.text_field :long_url
+  .field
+    = f.label :short_url
+    %br/
+    = f.text_field :short_url
+  .actions
+    = f.submit
