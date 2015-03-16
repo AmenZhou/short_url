@@ -7,13 +7,8 @@
       %ul
         - @transform.errors.full_messages.each do |message|
           %li= message
-  .field
-    = f.label :long_url
-    %br/
-    = f.text_field :long_url
-  .field
-    = f.label :short_url
-    %br/
-    = f.text_field :short_url
-  .actions
-    = f.submit
+  .row
+    .col-md-6
+      = f.text_field :short_url, placeholder: "input your url here", class: 'form-control'
+    .col-md-3
+      = f.submit "Get a nicer url", class: 'btn btn-default'

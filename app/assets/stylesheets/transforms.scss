@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container {
-  margin: 0, auto;
+  margin: 30px auto 0 auto;
   width: 85%;
+  min-height: 500px;
+}
+.new_transform {
+  margin-top: 50px;
 }
