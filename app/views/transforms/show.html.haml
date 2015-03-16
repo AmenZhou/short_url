@@ -1,10 +1,9 @@
-%p#notice= notice
-%p
-  %strong Long url:
-  = @transform.long_url
-%p
-  %strong Short url:
-  = @transform.short_url
-= link_to 'Edit', edit_transform_path(@transform)
-|
-= link_to 'Back', transforms_path
+.col-md-offset-1
+  %p#notice= notice
+  %p
+    %strong Long url:
+    = @transform.long_url
+  %p
+    %strong Short url:
+    = link_to request.host + go_transform_path(@transform), @transform.long_url
+  = link_to 'Back', transforms_path
