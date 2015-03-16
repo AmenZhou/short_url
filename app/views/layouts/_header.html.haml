@@ -1,0 +1,9 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .container-fluid
+      .navbar-header
+        = link_to "Home", root_path, class: 'navbar-brand'
+      .collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          %li
+            = link_to "Transform Link", new_transform_path
